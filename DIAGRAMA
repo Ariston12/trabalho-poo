@@ -1,0 +1,27 @@
+1. *adicionarQuarto(quarto)*  
+   Serve para adicionar um novo quarto ao hotel. Você fornece um objeto da classe Quarto como entrada, e ele é armazenado na lista de quartos do hotel.  
+
+2. *adicionarHospede(hospede)*  
+   Semelhante ao anterior, mas para hóspedes. Essa função coloca um novo hóspede na lista de pessoas que estão no hotel.  
+
+3. *buscarQuartoPorId(id)*  
+   Essa função é usada quando você quer procurar um quarto específico pelo número de identificação (ID).  
+   - Se encontrar o quarto, ela devolve o objeto do quarto.
+   - Se não achar, devolve "undefined".
+
+4. *fazerCheckIn(nomeHospede, idQuarto)*  
+   Essa é importante: é ela que realiza o *check-in*. Quando um hóspede quer ocupar um quarto, você passa o nome dele e o número do quarto que ele quer.  
+   - Se o quarto estiver disponível, a função marca o quarto como ocupado, registra o hóspede, e devolve true.  
+   - Se o quarto não estiver disponível, ela devolve false.  
+
+5. *fazerCheckOut(nomeHospede)*  
+   Aqui é o processo inverso: o hóspede está saindo do hotel. Você informa o nome dele, e a função:  
+   - Marca o quarto como livre novamente.  
+   - Remove o hóspede da lista.  
+   - Devolve true se deu certo ou false se o hóspede não foi encontrado.
+
+6. *obterQuartosDisponiveis()*  
+   Quer saber quais quartos estão vagos? Essa função devolve uma lista só com os quartos disponíveis.  
+
+7. *obterHospedesNoHotel()*  
+   Se precisar ver quem está hospedado no momento, essa função retorna uma lista de todos os hóspedes que ainda estão no hot
